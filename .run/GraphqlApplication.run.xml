@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GraphqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" />
+    <additionalParameters>
+      <param>
+        <option name="enabled" value="true" />
+        <option name="name" value="spring.graphql.graphiql.enabled" />
+        <option name="value" value="true" />
+      </param>
+    </additionalParameters>
+    <module name="graphql.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.graphql.GraphqlApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
