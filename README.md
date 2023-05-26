@@ -88,3 +88,9 @@ Response
             ]
         }
     }
+
+## performance issues
+
+Data loading can be a performance nightmare, if resolving instances of the same resource is done in as many fetches, from a database or the network.
+
+The solution, batching the load with DataLoaders. An article for Java Batch Loaders: https://jskim1991.medium.com/spring-boot-batching-graphql-queries-with-batchmapping-ed5955835432
