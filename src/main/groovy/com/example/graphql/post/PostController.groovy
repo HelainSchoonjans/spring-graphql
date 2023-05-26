@@ -47,6 +47,7 @@ class PostController {
         // you will enter here multiple times. this is an issue
         // graphql will call this method once per post to fetch.
         // is there a way to avoid over-fetching and get all results in a batch query?
+        // an article on the issue. Suggests there is a graphQL way to fetch efficiently: https://medium.com/@wtr/graphql-performance-explained-cb4b43412fb4
         return authorDao.get(post.authorId);
     }
 
