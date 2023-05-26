@@ -43,6 +43,10 @@ class PostController {
     @SuppressWarnings('unused')
     @SchemaMapping
     Author author(Post post) {
+        // put a breakpoint here, and fetch the recent posts
+        // you will enter here multiple times. this is an issue
+        // graphql will call this method once per post to fetch.
+        // is there a way to avoid over-fetching and get all results in a batch query?
         return authorDao.get(post.authorId);
     }
 
